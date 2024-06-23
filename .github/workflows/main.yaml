@@ -2,7 +2,7 @@ name: Workflow for automation
 
 # trigger
 on:
-  pull_request:
+  push:
     branches:
       - dev
 
