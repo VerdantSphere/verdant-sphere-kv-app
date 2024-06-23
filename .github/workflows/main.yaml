@@ -9,7 +9,7 @@ on:
 jobs:
   build:
     name: Build Laravel App
-    runs_on: ubuntu_latest
+    runs-on: ubuntu-latest
     steps:
       - name: Hello
         run: |
