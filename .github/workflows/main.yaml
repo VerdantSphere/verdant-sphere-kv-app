@@ -11,9 +11,9 @@ jobs:
     name: Build Laravel App
     runs-on: ubuntu-latest
     steps:
-      - name: Hello
-        run: |
-            echo "Hello"
+      # - name: Hello
+      #   run: |
+      #       echo "Hello"
 
       # - name : Composer Install
       #   run: | 
@@ -41,3 +41,7 @@ jobs:
       - name: Install Dependency
         run: |
           composer install
+
+      - name: Build the application
+        run:  |
+          php artisan key:generate
